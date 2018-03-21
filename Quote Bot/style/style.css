@@ -1,0 +1,121 @@
+body {
+  background: url("../images/whitewallpaper.jpg") no-repeat;
+  background-size: cover;
+}
+
+header {
+  overflow: hidden;
+  background-color: rgba(109, 106, 105, .85);
+  position: fixed; 
+  width: 100%;
+  height: 80px;
+}
+
+aside {
+  overflow: hidden;
+  background-color: rgba(109, 106, 105, .85);
+  width: 100%;
+  height: 75px;
+}
+
+header h1 {
+  color: black;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 32px;
+  padding: 24px 15px;
+  text-shadow: 2px 2px white;
+/*  padding-left: 60px;*/
+}
+
+
+.title {
+  float: left;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  height: 88.5vh;
+}
+
+#playlist {
+  text-align: center;
+  background-color: gray;
+}
+
+.hide {
+  display: none;
+}
+
+#audioButton {
+  float: right;
+}
+
+button {
+  color: black;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  margin-top: 18px;
+  background: none;
+  outline: none;
+  font-family: 'Permanent Marker', cursive;
+  text-shadow: 2px 2px white;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+#quote {
+  position: absolute;
+  top: 65%;
+  left: 25%;
+  color: white;
+  font-size: 24px;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-weight: bolder;
+  text-shadow: 2px 2px black;
+}
+
+footer p {
+  color: black;
+  text-align: right;
+  padding-right: 10px;
+  font-weight: bolder;
+  text-shadow: 2px 2px white;
+}
+
+
+
+/*----------------------------------*/
+
+
+/*----------------------------------*/
+
+@media screen and (max-width: 1025px) {
+  main {
+    flex-direction: column;
+  }
+
+  article {
+    order: 0;
+    flex: 1;
+  }
+
+  button {
+    padding: 10px;
+    border: none;
+    background: none;
+    font-family: 'Rammetto One', cursive;
+    font-size: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+
+  .display {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
